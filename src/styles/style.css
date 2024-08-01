@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+
+.header-img {
+    width: 30%;
+    object-fit: cover;
+}
+
+.header-container {
+    padding: 60px 80px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu__item {
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-menu__item a:hover {
+    color: #e53939;
+}
+
+header h1 {
+    color: white;
+    margin-top: 100px;
+    font-size: 3em;
+}
+
+header p {
+    color: white;
+    margin-top: 12px;
+    font-size: 1.2em;
+}
+
+main {
+    width: 85%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 72px;
+}
+
+main h2 {
+    font-size: 2em;
+}
+
+.outline-bottom {
+    height: 20px;
+    width: 100%;
+    background-color: #e53939;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+#sobre p {
+    margin-top: 15px;
+}
+
+#sobre .foto-pessoal {
+    display: none;
+}
+
+.gostos-pessoais__item {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-top: 12px;
+}
+
+.gostos-pessoais__item p {
+    margin-top: 6px;
+}
+
+.gostos-pessoais__item img {
+    width: 150px;
+    height: 150px;
+}
+
+.gostos-pessoais__left img {
+    margin-right: 12px;
+}
+
+.gostos-pessoais__imgMobile {
+    display: none;
+}
+
+#motivacao h3 {
+    margin-top: 24px;
+}
+
+#motivacao p {
+    margin-top: 6px;
+}
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
+footer p a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* TABLET */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+    .header-img {
+        width: 40%;
+        object-fit: cover;
+    }
+
+    .header-container {
+        padding: 40px 20px 40px;
+    }
+
+    .nav-menu {
+        margin: 0 auto;
+    }
+
+    .nav-menu__item {
+        margin-right: 10px;
+    }
+
+    .nav-menu__item a {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        white-space: pre-wrap;
+        margin-top: 48px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+}
+
+/* SMARTPHONE */
+@media screen and (max-width: 425px) {
+    
+    body {
+        background-color: black;
+    }
+
+    header {
+        display: block;
+    }
+    
+    .header-img {
+        display: none;
+    }
+
+    .header-container {
+        padding: 40px 20px;
+        background-color: white;
+        border-radius: 0px 0px 24px 24px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu__item {
+        margin-bottom: 6px;
+        margin-right: 0px;
+        text-align: center;
+        background-color: #e53939;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+        width: 50%;
+        margin: 6px auto;
+        padding: 12px;
+        border-radius: 6px;
+    }
+
+    .nav-menu__item a {
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+    }
+
+    header h1 {
+        font-size: 24px;
+        white-space: pre-wrap;
+        margin-top: 12px;
+        text-align: center;
+        color: black;
+    }
+
+    header p {
+        font-size: 16px;
+        text-align: center;
+        color: black;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    main {
+        color: white;
+    }
+
+    #sobre .foto-pessoal {
+        display: block;
+        width: 100%;
+        margin-top: 12px;
+        border-radius: 5px;
+    }
+
+    .gostos-pessoais__item {
+        display: block;
+    }
+
+    .gostos-pessoais__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gostos-pessoais__imgMobile {
+        margin-top: 24px;
+        display: block;
+    }
+
+    .gostos-pessoais__imgAll {
+        display: none;
+    }
+
+    footer {
+        background-color: white;
+    }
+
+    footer p {
+        color: black;
+    }
+
+    footer p a {
+        color: black;
+    }
+}
